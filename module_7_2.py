@@ -7,6 +7,7 @@ def custom_write(file_name, strings):
         string_positions[(x, f.tell())] = i
         f.write(f'{i}\n')
         x+=1
+    f.close()
     return string_positions
 
 
